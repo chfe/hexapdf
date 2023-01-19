@@ -11,18 +11,6 @@ if ENV['REAL_GEM']
   PKG_FILES.concat(Dir.glob(['Rakefile', 'LICENSE', 'agpl-3.0.txt', 'README.md', 'CHANGELOG.md',
                              'VERSION', 'CONTRIBUTERS', 'man/man1/hexapdf.1',
                              'examples/*', 'test/**/*']))
-  description = <<~DESC
-    HexaPDF is a pure Ruby library with an accompanying application for working with PDF
-    files.
-
-    In short, it allows creating new PDF files, manipulating existing PDF files, merging multiple
-    PDF files into one, extracting meta information, text, images and files from PDF files, securing
-    PDF files by encrypting them and optimizing PDF files for smaller file size or other
-    criteria.
-
-    HexaPDF was designed with ease of use and performance in mind. It uses lazy loading and lazy
-    computing when possible and tries to produce small PDF files by default.
-  DESC
 end
 
 Gem::Specification.new do |s|
