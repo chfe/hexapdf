@@ -1,4 +1,4 @@
-require_path 'lib/hexapdf/version'
+require 'lib/hexapdf/version'
 
 PKG_FILES = Dir.glob([
                        'bin/*',
