@@ -1,4 +1,4 @@
-# require_relative 'lib/hexapdf/version'
+require_path 'lib/hexapdf/version'
 
 PKG_FILES = Dir.glob([
                        'bin/*',
@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
 
   s.files = PKG_FILES
 
-  #s.require_path = 'lib'
+  s.require_path = 'lib'
   s.executables = ['hexapdf']
   s.add_dependency('cmdparse', '~> 3.0', '>= 3.0.3')
   s.add_dependency('geom2d', '~> 0.3')
